@@ -14,10 +14,11 @@
 </head>
 <body>
 	<%
+		// login.jsp에서 입력한 아이디와 비밀번호가 실제 DB와 일치하는 지 확인한 후 결과를 반환해주는 곳.
 		UserDAO userDAO = new UserDAO();
 		int result = userDAO.login(user.getUserID(), user.getUserPassword());
 		
-		if(result == 1){
+		if(result == 1){ // 로그인 성공
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("location.href = 'main.jsp'");

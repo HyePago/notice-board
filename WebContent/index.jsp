@@ -8,7 +8,7 @@
 </head>
 <body>
 	<script>
-		location.href = 'login.jsp'
+		location.href = 'login.jsp' // 메인페이지 열자마자 login.jsp로, 나중에 수정할 것.
 	</script>
 </body>
 </html>
